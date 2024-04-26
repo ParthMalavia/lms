@@ -16,6 +16,7 @@ import Sample from './pages/student/sample';
 import AddAnnouncement from './pages/faculty/faculyannouncement';
 import AssignCourse from './pages/admin/assigncourse';
 import StudnetList from './pages/admin/students';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   const theme = createTheme({
@@ -46,11 +47,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
+        <AuthProvider>
         <Routes>
           <Route path="dashboard" element={<DashboardPage />}></Route>
           <Route path="courses" element={<CoursesPage />}></Route>
           <Route path="account" element={<AccountPage />}></Route>
           <Route path="courseshome" element={<CourseHomepage />}></Route>
+          {/* TODO: change path test to something meanign full */}
+          {/* add param in url as this endpoing is related to specific course detailation */}
+          {/* ex: <Route path="/inbox/:userId" element={<Inbox />} /> */}
           <Route path="test" element={<Test />}></Route>
           <Route path="admin_dashboard" element={<AdminDashboardPage />}></Route>
           <Route path="faculty_dashboard" element={<FacultyDashnboard />}></Route>
@@ -62,6 +67,7 @@ function App() {
           <Route path="sample" element={<Sample />}></Route>
           <Route path="/" element={<LoginPage />}></Route>
         </Routes>
+        </AuthProvider>
       </BrowserRouter>
     </ThemeProvider>
   );

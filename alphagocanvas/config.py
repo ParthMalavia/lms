@@ -5,4 +5,4 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 ALGORITHM = "HS256"
 
 # Database URL
-URL_DATABASE = "mysql+pymysql://root:root@localhost:3307/project202cmpefinal"
+URL_DATABASE = "mysql+pymysql://root:parth123@localhost:3306/lms"

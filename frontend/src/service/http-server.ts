@@ -112,8 +112,8 @@ axiosInstance.interceptors.response.use(
     // if request fails with 401 UNAUTHORIZED status and 'Token has expired' as response message
     // then it calls the api to generate new access token
     if (
-      error.response.status == 403 &&
-      error.response.statusText == "Forbidden"
+      error.response.status === 403 &&
+      error.response.statusText === "Forbidden"
     ) {
       Logout();
     }

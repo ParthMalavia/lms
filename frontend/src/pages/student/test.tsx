@@ -35,7 +35,7 @@ function Test() {
                   <h6>Go-Canvas</h6>
                 </div>
                 <div className="course-content-section">
-                  <DashboardCard></DashboardCard>
+                  {/* <DashboardCard></DashboardCard> */}
                   <div className="content-dropdown">
                     <Accordion>
                       <AccordionSummary

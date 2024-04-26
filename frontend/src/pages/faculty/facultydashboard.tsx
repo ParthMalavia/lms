@@ -42,12 +42,12 @@ function FacultyDashnboard() {
                 container
                 className="grid-section-1"
               >
-                <Grid item sm={12} md={4} lg={4} className="courses-grid">
+                {/* <Grid item sm={12} md={4} lg={4} className="courses-grid">
                   <DashboardCard></DashboardCard>
                 </Grid>
                 <Grid item sm={12} md={4} lg={4} className="courses-grid">
                   <DashboardCard></DashboardCard>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Grid>
             <div className="dashboard-dropdown">
@@ -69,12 +69,13 @@ function FacultyDashnboard() {
                       container
                       className="grid-section-1"
                     >
-                      <Grid item sm={12} md={4} lg={4} className="courses-grid">
+                      {/* TODO: Change as per component change */}
+                      {/* <Grid item sm={12} md={4} lg={4} className="courses-grid">
                         <DashboardCard></DashboardCard>
                       </Grid>
                       <Grid item sm={12} md={4} lg={4} className="courses-grid">
                         <DashboardCard></DashboardCard>
-                      </Grid>
+                      </Grid> */}
                     </Grid>
                   </Grid>
                 </AccordionDetails>

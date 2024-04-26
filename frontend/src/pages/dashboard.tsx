@@ -1,5 +1,5 @@
 import { Button, FormControl, Grid, MenuItem, Select, SelectChangeEvent } from "@mui/material";
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";
@@ -15,10 +15,6 @@ function DropdownArrow() {
 
 function DashboardPage() {
 
-    const [number, setNumber] = React.useState('');
-    const handleChange = (event: SelectChangeEvent) => {
-        setNumber(event.target.value as string);
-    };
     return (
         <>
             <Helmet>
@@ -41,7 +37,7 @@ function DashboardPage() {
                         </div>
                         <Grid container spacing={3} className="grid-sections">
                             <Grid item md={12} lg={12} spacing={3} container className="grid-section-1">
-                                <Grid item sm={12} md={4} lg={4} className="courses-grid">
+                                {/* <Grid item sm={12} md={4} lg={4} className="courses-grid">
                                     <DashboardCard></DashboardCard>
                                 </Grid>
                                 <Grid item sm={12} md={4} lg={4} className="courses-grid">
@@ -52,7 +48,7 @@ function DashboardPage() {
                                 </Grid>
                                 <Grid item sm={12} md={4} lg={4} className="courses-grid">
                                             <DashboardCard></DashboardCard>
-                                </Grid>
+                                </Grid> */}
                             </Grid>
                         </Grid>
                     </div>
